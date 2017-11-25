@@ -6,10 +6,13 @@ var badges;
 var items;
 var cursors;
 var jumpButton;
-var text;
-var winningMessage;
+var scoreText;
+var livesText;
+var finalMessage;
 var won = false;
+var gameOver = false;
 var currentScore = 0;
+var lives = 3;
 var winningScore = 100;
 
 // add collectable items to the game
@@ -97,7 +100,7 @@ window.onload = function () {
     game.load.image('platform2', 'platform_2.png');
 
     //Load spritesheets
-    game.load.spritesheet('player', 'chalkers.png', 48, 62);
+    game.load.spritesheet('player', 'mikethefrog.png', 32, 32);
     game.load.spritesheet('coin', 'coin.png', 36, 44);
     game.load.spritesheet('badge', 'badge.png', 42, 54);
     game.load.spritesheet('poison', 'poison.png', 32, 32);
