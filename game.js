@@ -38,7 +38,10 @@ function addPlatforms() {
   platforms.create(650, 300, 'platform');
   platforms.create(550, 200, 'platform2');
   platforms.create(300, 450, 'platform');
-  platforms.create(400, 350, 'platform2');
+  platforms.create(400, 350, 'poison');
+  platforms.create(100, 375, 'poison');
+  platforms.create(125, 50, 'star');
+
   platforms.setAll('body.immovable', true);
 }
 
@@ -88,6 +91,8 @@ window.onload = function () {
     game.load.spritesheet('player', 'chalkers.png', 48, 62);
     game.load.spritesheet('coin', 'coin.png', 36, 44);
     game.load.spritesheet('badge', 'badge.png', 42, 54);
+    game.load.spritesheet('poison', 'poison.png' 32, 32);
+    game.load.spritesheet('star', 'star.png', 32, 32);
   }
 
   // initial game set up
